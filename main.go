@@ -17,8 +17,10 @@ import (
 	"github.com/genofire/restrict-mini-dns-server/router"
 )
 
-var configFile string
-var config *model.Config
+var (
+	configFile string
+	config     *model.Config
+)
 
 func main() {
 	flag.StringVar(&configFile, "config", "config.yml", "path of configuration file (default:config.yaml)")
